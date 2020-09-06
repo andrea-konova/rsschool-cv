@@ -1,0 +1,32 @@
+.header {
+  text-align: center;
+}
+.container {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.contacts {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+}
+.my-photo {
+  width: 400px;
+  height: 400px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 50%;
+}
+.contacts-text {
+  width: 400px;
+}
+.project-link {
+  display: block;
+}
+.project-text {
+  width: 100%;
+}
