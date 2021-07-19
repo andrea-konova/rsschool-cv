@@ -7,44 +7,95 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="hero">
     <div class="container">
-      <h1 class="header">Resume</h1>
-    </div>
-  </header>
-  <main>
-    <section class="about-me">
-      <div class="container">
-        <div class="contacts">
-          <img class="my-photo" src="photo.jpg" alt="My photo">
-          <div class="info">
-            <h2 class="name">Andrii Konovalenko</h2>
-            <a href="mailto:an256.ak@gmail.com">an256.ak@gmail.com</a>
-            <a href="https://t.me/andrey_k95">@andrey_k95</a>
-            <h3>Summary about me</h3>
-            <p class="contacts-text">Since February 2020, I have been actively studying layout and Javascript. Made several independent projects on layout and Javascript. I want to become a front-end developer, for this I devote all my free time to my development and study.</p>
-            <h3>Skills</h3>
-            <p class="contacts-text">HTML5, CSS, SASS, LESS, Javascript, BEM, Gulp, Webpack</p>
-          </div>
+      <div class="hero-header">
+        <div class="social-links">
+          <a href="https://github.com/andrea-konova" class="social-link"><img src="img\social\github.svg" alt="github"></a>
+          <a href="https://instagram.com/and.k95" class="social-link"><img src="img\social\instagram.svg" alt="instagram"></a>
+          <a href="https://t.me/andrey_k95" class="social-link"><img src="img\social/telegram.svg" alt="telegram"></a>
         </div>
+        <!-- /.social-links -->
       </div>
-    </section>
-    <section class="project">
-      <div class="container">
-        <h3>Code examples</h3>
-        <a class="project-link" href="https://github.com/andrea-konova/diploma_js_13">Javascript project</a>
-        <a class="project-link" href="https://github.com/andrea-konova/moneyCalcApp">React project</a>
-        <h3>Experience</h3>
-        <p class="project-text">I took courses from the Web-start and Javascript global academies. There are several freelance projects. I also try to constantly learn, so I go through intensives and workshops. You can see examples of my work in my github account:</p>
-        <a class="project-link" href="https://github.com/andrea-konova">Experience project</a>
-        <h3>Education</h3>
-        <p class="project-text">National Aerospace University – Kharkiv Aviation Institute (KhAI)</p>
-        <p class="project-text">Intensive web start course </p>
-        <p class="project-text">Javascript course</p>
-        <h3>English</h3>
-        <p class="project-text">My English level is Pre-Intermediate.</p>
+      <!-- /.hero-header -->
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">Resume</h1>
+          <h2 class="hero-subtitle">Andrii Konovalenko</h2>
+          <p class="hero-description">
+            Hello, I am a web developer and freelancer. I am engaged in site layout, and also write code for javascript. I am currently studying the React JS library. My recent work, as well as code examples, are presented below.
+          </p>
+        </div>
+        <!-- /.hero-text -->
+        <div class="hero-avatar">
+        </div>
+        <!-- /.hero-avatar -->
       </div>
-    </section>
+      <!-- /.hero-content -->
+    </div>
+    <!-- /.container -->
+  </header>
+  <main class="main-skills">
+    <div class="container">
+      <div class="skills">
+        <h3 class="hero-subtitle skills-title">Technologies that I use</h3>
+        <ul class="skills-list">
+          <li class="list-item">HTML5</li>
+          <li class="list-item">CSS</li>
+          <li class="list-item">SASS</li>
+          <li class="list-item">Javascript</li>
+          <li class="list-item">BEM</li>
+          <li class="list-item">Gulp</li>
+          <li class="list-item">Webpack</li>
+        </ul>
+      </div>
+    </div>
   </main>
+  <section class="projects">
+    <div class="container">
+      <h3 class="hero-subtitle skills-title">Examples of my recent work</h3>
+      <ol class="skills-list">
+        <li class="list-item">Snake on javascript
+          <a href="https://telegra.ph/Zmejka-na-JavaScript-05-18" class="projects-link">View description</a> |
+          <a href="https://github.com/andrea-konova/snakeJS" class="projects-link">View Code</a>
+        </li>
+        <li class="list-item">Tow truck service website
+          <a href="https://telegra.ph/Razrabotka-sajta-dlya-zakaza-uslug-ehvakuatora-05-19" class="projects-link">View description</a> |
+          <a href="https://evakuatorservices.ru/" class="projects-link">Go to the site</a>
+        </li>
+        <li class="list-item">Website for the sale of branded shoes
+          <a href="https://shooes.net/" class="projects-link">Go to the site</a>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <section class="education">
+    <div class="container">
+      <h3 class="hero-subtitle skills-title">Education</h3>
+      <p class="hero-description education-description">
+        National Aerospace University – Kharkiv Aviation Institute (KhAI) 2018
+        <br>My English level is Pre-Intermediate
+      </p>
+    </div>
+  </section>
+  <section class="contacts">
+    <div class="container">
+      <div class="skills">
+        <h3 class="hero-subtitle skills-title">Contacts</h3>
+        <ul class="skills-list">
+          <li class="list-item">
+            <a href="mailto:andriikonova
+            @gmail.com" class="contacts-link">Gmail</a>
+          </li>
+          <li class="list-item">
+            <a href="https://t.me/andrey_k95" class="contacts-link">Telegram</a>
+          </li>
+          <li class="list-item">
+            <a href="https://instagram.com/and.k95" class="contacts-link">Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
