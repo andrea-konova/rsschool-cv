@@ -1,43 +1,215 @@
-h3 {
-  margin: 10px 0;
+* {
+  box-sizing: border-box;
 }
-p {
-  margin: 5px 0;
+img {
+  max-width: 100%;
 }
-a {
-  text-decoration: none;
-  font-weight: bold;
-  color: maroon;
-}
-.header {
-  text-align: center;
+body {
+  background-color: #20202D;
+  margin: 0;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
 }
 .container {
   width: 90%;
-  max-width: 1024px;
-  margin: 0 auto;
+  max-width: 945px;
+  margin: auto;
 }
-.contacts {
+.section {
+  padding-top: 64px;
+  padding-bottom: 92px;
+}
+.section-title {
+  margin: 0;
+  margin-bottom: 84px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+}
+.hero {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background: linear-gradient(0deg, #000000 0.01%, rgba(0, 0, 0, 0) 95.44%);
+}
+.hero-header {
   display: flex;
-  align-items: start;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
 }
-.my-photo {
-  width: 400px;
-  height: 400px;
+.social-link {
+  margin-left: 20px;
 }
-.info {
+.social-link:first-child {
+  margin-left: 0;
+}
+.hero-content {
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  max-width: 50%;
-  padding-left: 50px;
+  justify-content: space-between;
+  align-items: center;
 }
-.contacts-text {
-  width: 400px;
-}
-.project-link {
+.hero-subtitle {
   display: block;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFBB01;
+  margin-bottom: 14px;
 }
-.project-text {
-  width: 100%;
+.hero-title {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 59px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.hero-description {
+  font-size: 16px;
+  line-height: 28px;
+  max-width: 420px;
+  margin: 0;
+  margin-bottom: 38px;
+}
+.hero-avatar {
+  width: 389px;
+  height: 389px;
+  background-color: #fff;
+  border-radius: 50%;
+  background-image: url('img/photo.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  border: 13px solid #fff;
+}
+
+/* main-skills */
+.main-skills {
+  padding-bottom: 50px;
+  background-color: #000;
+}
+.skills-title {
+  margin-top: 0;
+}
+.skills-list {
+  margin: 0;
+  padding-inline-start: 20px;
+}
+.list-item {
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+}
+li.list-item::marker {
+  color: #FFBB01;
+}
+
+/* projects */
+.projects {
+  padding-bottom: 50px;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 95.44%);
+}
+.projects-link {
+  color: #FFC41D;
+}
+
+/* education*/
+.education {
+  padding-bottom: 50px;
+}
+.education-description {
+  max-width: 100%;
+  margin: 0;
+}
+
+/* contacts */
+
+.contacts-link {
+  text-decoration: none;
+  color: inherit;
+  margin-right: 37px;
+}
+.contacts-link:hover {
+  text-decoration: underline;
+}
+
+/* responsive */
+@media (max-width: 1100px) {
+  .hero-avatar {
+    width: 300px;
+    height: 300px;
+    border-width: 10px;
+    background-position: center top -90px;
+  }
+}
+@media (max-width: 836px) {
+  .hero-content {
+    flex-direction: column;
+  }
+  .hero-avatar {
+    order: 0;
+    width: 300px;
+    height: 300px;
+    border-width: 10px;
+    margin-bottom: 17px;
+    background-position: center top;
+  }
+  .hero-text {
+    order: 1;
+    text-align: center;
+  }
+  .features-item {
+    flex-basis: 45%;
+  }
+}
+@media (max-width: 564px) {
+  .hero {
+    padding-top: 43px;
+    padding-bottom: 75px;
+  }
+  .hero-avatar {
+    width: 113px;
+    height: 113px;
+    border-width: 4px;
+    background-position: center top ;
+  }
+  .hero-header {
+    margin-bottom: 38px;
+  }
+  .social-link {
+    margin-left: 10px;
+  }
+  img.social-link-img {
+    max-width: 20px;
+  }
+  .hero-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .hero-subtitle {
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 4px;
+  }
+  .hero-description {
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .section {
+    padding: 60px 0;
+  }
+  .section-title {
+    font-size: 19px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .contacts-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .contacts-link {
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    margin-bottom: 13px;
+  }
 }
