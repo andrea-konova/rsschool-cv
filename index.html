@@ -3,39 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML, CSS & Git Basics</title>
+  <title>Andrii Konovalenko CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Raleway:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
+  <header class="header">
     <div class="container">
-      <div class="hero-header">
-        <div class="social-links">
-          <a href="https://github.com/andrea-konova" class="social-link"><img src="img/social/github.svg" alt="github"></a>
-          <a href="https://instagram.com/and.k95" class="social-link"><img src="img/social/instagram.svg" alt="instagram"></a>
-          <a href="https://t.me/andrey_k95" class="social-link"><img src="img/social/telegram.svg" alt="telegram"></a>
+      <div class="row header__row">
+        <div class="column__left header-column__left">
+          <a href="#" class="header__link">
+            <h1 class="header-title">Andrii Konovalenko<span class="header-title--span">Front-end developer</span></h1>
+          </a>
         </div>
-        <!-- /.social-links -->
+        <div class="column__right">
+          <nav class="header__navigation navigation">
+            <ul class="header__menu menu">
+              <li class="menu__item">
+                <a href="#visiting" class="menu__item-link item-link__active">Education</a>
+              </li>
+              <li class="menu__item">
+                <a href="#explore" class="menu__item-link">Work experience</a>
+              </li>
+              <li class="menu__item">
+                <a href="#video" class="menu__item-link">Skills</a>
+              </li>
+              <li class="menu__item">
+                <a href="#contacts" class="menu__item-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <!-- /.hero-header -->
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1 class="hero-title">Resume</h1>
-          <h2 class="hero-subtitle">Andrii Konovalenko</h2>
-          <p class="hero-description">
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="row">
+        <div class="column__left">
+          <div class="image__wrap main-image__wrap">
+            <img src="./img/me-1.jpg" alt="autor-photo" class="hero__image">
+          </div>
+        </div>
+        <div class="column__right">
+          <h2 class="title">Andrii <span class="title__span">Konovalenko</span></h2>
+          <p class="subtitle">Front-end developer</p>
+          <div class="h3 section__title">Profile</div>
+          <p class="section__text">
             Hello, I am a web developer and freelancer. I am engaged in site layout, and also write code for javascript. I am currently studying the React JS library. My recent work, as well as code examples, are presented below.
           </p>
         </div>
-        <!-- /.hero-text -->
-        <div class="hero-avatar">
-        </div>
-        <!-- /.hero-avatar -->
       </div>
-      <!-- /.hero-content -->
     </div>
-    <!-- /.container -->
-  </header>
-  <main class="main-skills">
+  </main>
+  <!-- <main class="main-skills">
     <div class="container">
       <div class="skills">
         <h3 class="hero-subtitle skills-title">Technologies that I use</h3>
@@ -95,6 +118,6 @@
         </ul>
       </div>
     </div>
-  </section>
+  </section> -->
 </body>
 </html>
