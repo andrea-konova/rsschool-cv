@@ -17,6 +17,8 @@ html
   font-size: 20px
 img
   max-width: 100%
+p
+  margin: 0
 body
   margin: 0
   font-family: 'Open Sans', sans-serif
@@ -25,6 +27,23 @@ body
   width: 90%
   max-width: 1200px
   margin: auto
+.section
+  &__title
+    position: relative
+    margin: 3rem 0
+    text-transform: uppercase
+    font-size: 1.5rem
+    font-weight: 700
+    &::after
+      content: ""
+      position: absolute
+      bottom: -1.3rem
+      left: 0
+      width: 50px
+      height: 5px
+      background-color: $yellow
+  &-bg
+    background: linear-gradient(to right,  $main-bg-1 0%,$main-bg-1 50%,$main-bg-2 50%,$main-bg-2 100%)
 .row
   display: flex
   align-items: center
@@ -32,17 +51,18 @@ body
 .column
   &__left
     width: 40%
-    background-color: $main-bg-1;
+    &--bg
+      background-color: $main-bg-1;
   &__right
     width: 60%
-    background-color: $main-bg-2;
+    &--bg
+      background-color: $main-bg-2;
 .image__wrap
   width: 100%
   height: 15rem
 
 // header
 .header
-  background: linear-gradient(to right,  $main-bg-1 0%,$main-bg-1 50%,$main-bg-2 50%,$main-bg-2 100%)
   &-column__left
     display: flex
     align-items: center
@@ -62,9 +82,10 @@ body
     margin: 0
     font-size: 1.2rem
     color: $light
-    &--span
+    &--fw
       display: block
       font-size: 1rem
+      font-weight: 500
     &:hover
       cursor: pointer
       color: $yellow
@@ -110,8 +131,23 @@ body
       width: 3rem
       height: 100%
       background-color: rgba($yellow, 0.8)
+  &__description
+    padding: 0 0 0 3rem
 .hero__image
   width: 100%
   height: 100%
   object-fit: cover
   object-position: center
+.description
+  &__title
+    margin: 0
+    font-size: 3rem
+    font-weight: 700
+    &--fw
+      font-weight: 500
+  &__subtitle
+    padding: 0 0.5rem
+    border: none
+    border-radius: 0.3rem
+    font-size: 1rem
+    background-color: $yellow
