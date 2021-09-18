@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Andrii Konovalenko CV</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Raleway:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/agate.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -67,7 +68,7 @@
           <div class="point">
             <h3 class="section__title section__title--light" id="education">Education</h3>
             <div class="education">
-              <h4 class="point__title"><span class="education__date">2021 - 2022</span> Rolling Scopes School</h4>
+              <h4 class="point__title"><span class="education__date">2021 - now</span> Rolling Scopes School</h4>
               <p class="point__text point__text--light">Current learning HTMl, CSS, JS, Git, algorithmic program, frameworks</p>
             </div>
             <div class="education">
@@ -93,18 +94,34 @@
             </ul>
           </div>
           <div class="point">
+            <h3 class="section__title section__title--light" id="skills">My technical skills</h3>
+            <ul class="list" type="square">
+              <li class="point__text point__text--light">HTML</li>
+              <li class="point__text point__text--light">CSS, SASS, BEM</li>
+              <li class="point__text point__text--light">Javascript</li>
+              <li class="point__text point__text--light">Figma, Photoshop</li>
+              <li class="point__text point__text--light">Gulp, Webpack</li>
+            </ul>
+          </div>
+          <div class="point">
             <h3 class="section__title section__title--light" id="contacts">Contacts</h3>
-            <ul class="list contacts-list" type="square">
+            <ul class="list contacts-list">
               <li class="point__text point__text--light contacts__item">
-                <div class="contacts__logo"></div>
+                <div class="image__wrap contacts-image__wrap">
+                  <img src="./img/svg/gmail.svg" alt="telegram" class="contacts__logo">
+                </div>
                 <a href="mailto:an256.ak@gmail.com" class="contacts-link">Gmail</a>
               </li>
               <li class="point__text point__text--light contacts__item">
-                <div class="contacts__logo"></div>
+                <div class="image__wrap contacts-image__wrap">
+                  <img src="./img/svg/telegram.svg" alt="telegram" class="contacts__logo">
+                </div>
                 <a href="https://t.me/andrey_k95" class="contacts-link">Telegram</a>
               </li>
               <li class="point__text point__text--light contacts__item">
-                <div class="contacts__logo"></div>
+                <div class="image__wrap contacts-image__wrap">
+                  <img src="./img/svg/instagram.svg" alt="telegram" class="contacts__logo">
+                </div>
                 <a href="https://instagram.com/and.k95" class="contacts-link">Instagram</a>
               </li>
             </ul>
@@ -116,9 +133,22 @@
             <div class="project">
               <div class="project__description">
                 <h4 class="point__title">
+                  <a href="https://rolling-scopes-school.github.io/andrea-konova-JSFEPRESCHOOL/whack-a-mole/" class="point__title--link">Whack-a-mole</a>
+                </h4>
+                <p class="point__text point__text--light">I did this project in the preparatory course on rolling-scopes-school</p>
+              </div>
+              <div class="image__wrap project-image__wrap">
+                <a href="https://rolling-scopes-school.github.io/andrea-konova-JSFEPRESCHOOL/whack-a-mole/" class="project-link">
+                  <img src="./img/projects/whack-a-mole.png" alt="whack-a-mole" class="image">
+                </a>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project__description">
+                <h4 class="point__title">
                   <a href="https://github.com/andrea-konova/snakeJS" class="point__title--link">Snake on javascript</a>
                 </h4>
-                <p class="point__text point__text--light">This is a tutorial project. I made it to improve my knowledge of canvas technology and practice object-oriented programming.</p>
+                <p class="point__text point__text--light">This is a tutorial project. I made it to improve my knowledge of canvas technology and practice object-oriented programming</p>
                 <a href="https://telegra.ph/Zmejka-na-JavaScript-05-18" class="project-link">View full description</a>
               </div>
               <div class="image__wrap project-image__wrap">
@@ -132,7 +162,7 @@
                 <h4 class="point__title">
                   <a href="https://evakuatorservices.ru/" class="point__title--link">Tow truck service website</a>
                 </h4>
-                <p class="point__text point__text--light">This is a tutorial project. I made it to improve my knowledge of canvas technology and practice object-oriented programming.</p>
+                <p class="point__text point__text--light">This is a tutorial project. I made it to improve my knowledge of canvas technology and practice object-oriented programming</p>
                 <a href="https://telegra.ph/Razrabotka-sajta-dlya-zakaza-uslug-ehvakuatora-05-19" class="project-link">View full description</a>
               </div>
               <div class="image__wrap project-image__wrap">
@@ -143,79 +173,34 @@
             </div>
           </div>
           <div class="point point--right">
-            <h3 class="section__title section__title--light">My technical skills</h3>
-            <ul class="list" type="square">
-              <li class="point__text point__text--light">HTML, CSS</li>
-              <li class="point__text point__text--light">Javascript</li>
-              <li class="point__text point__text--light">Figma, Photoshop</li>
-              <li class="point__text point__text--light">SASS, BEM</li>
-              <li class="point__text point__text--light">Gulp, Webpack</li>
-            </ul>
+            <h3 class="section__title section__title--light">Code example</h3>
+            <pre>
+              <code class="javascript">
+function getMatrix(number) {
+  let matrix = [];
+  for (i = 0; i < number; i++) {
+    matrix[i] = [];
+    for (j = 0; j < number; j++) {
+      matrix[i][j] = (i === j ? 1 : 0);
+    }
+  }
+  return matrix;
+}
+              </code>
+            </pre>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- <main class="main-skills">
+  <footer class="footer">
     <div class="container">
-      <div class="skills">
-        <h3 class="hero-subtitle skills-title">Technologies that I use</h3>
-        <ul class="skills-list">
-          <li class="list-item">HTML5</li>
-          <li class="list-item"></li>
-          <li class="list-item">SASS</li>
-          <li class="list-item">Javascript</li>
-          <li class="list-item">BEM</li>
-          <li class="list-item">Gulp</li>
-          <li class="list-item">Webpack</li>
-        </ul>
+      <div class="row footer__row">
+        <a href="https://rs.school/js" class="footer__course-link"></a>
+        <p class="footer__copyright">© 2021 by Andrii Konovalenko</p>
+        <a href="https://rs.school/js" class="footer__github-link"></a>
       </div>
     </div>
-  </main>
-  <section class="projects">
-    <div class="container">
-      <h3 class="hero-subtitle skills-title">Examples of my recent work</h3>
-      <ol class="skills-list">
-        <li class="list-item">Snake on javascript
-          <a href="https://telegra.ph/Zmejka-na-JavaScript-05-18" class="projects-link">View description</a> |
-          <a href="https://github.com/andrea-konova/snakeJS" class="projects-link">View Code</a>
-        </li>
-        <li class="list-item">Tow truck service website
-          <a href="https://telegra.ph/Razrabotka-sajta-dlya-zakaza-uslug-ehvakuatora-05-19" class="projects-link">View description</a> |
-          <a href="https://evakuatorservices.ru/" class="projects-link">Go to the site</a>
-        </li>
-        <li class="list-item">Website for the sale of branded shoes
-          <a href="https://shooes.net/" class="projects-link">Go to the site</a>
-        </li>
-      </ol>
-    </div>
-  </section>
-  <section class="education">
-    <div class="container">
-      <h3 class="hero-subtitle skills-title">Education</h3>
-      <p class="hero-description education-description">
-        2018
-        <br>My English level is Pre-Intermediate
-      </p>
-    </div>
-  </section>
-  <section class="contacts">
-    <div class="container">
-      <div class="skills">
-        <h3 class="hero-subtitle skills-title">Contacts</h3>
-        <ul class="skills-list">
-          <li class="list-item">
-            <a href="mailto:an256.ak@gmail.com" class="contacts-link">Gmail</a>
-          </li>
-          <li class="list-item">
-            
-          </li>
-          <li class="list-item">
-            <a href="https://instagram.com/and.k95" class="contacts-link">Instagram</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section> -->
+  </footer>
 </body>
 </html>
