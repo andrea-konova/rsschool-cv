@@ -405,7 +405,7 @@ pre {
 }
 
 .footer__course-link {
-  width: 6rem;
+  width: 5rem;
   height: 2rem;
   background-image: url(./img/svg/rs_school_js.svg);
   background-repeat: no-repeat;
@@ -435,5 +435,119 @@ pre {
 .footer__copyright {
   font-size: 1rem;
   font-weight: 700;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+  .section__title {
+    padding: 2rem 0;
+  }
+  .description__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .header-title {
+    font-size: 1rem;
+  }
+  .header-title--fw {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-bg {
+    background: #292934;
+  }
+  .column__left {
+    width: 100%;
+  }
+  .column__left--bg {
+    background-color: #292934;
+  }
+  .column__right {
+    width: 100%;
+  }
+  .column__right--bg {
+    background-color: #292934;
+  }
+  .main {
+    padding-bottom: 1rem;
+  }
+  .main-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main__description {
+    padding: 0;
+  }
+  .main-image__wrap {
+    width: 65%;
+    height: 20rem;
+  }
+  .description__title {
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+  .description__subtitle {
+    display: block;
+    text-align: center;
+  }
+  .section-data {
+    padding-bottom: 1rem;
+  }
+  .section-data__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .point--right {
+    padding: 0;
+  }
+  .hljs {
+    background: #292934;
+  }
+  .education__point:nth-child(4) {
+    margin-bottom: 0;
+  }
+  .contacts-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contacts__item {
+    padding-right: 0.5rem;
+  }
+  .footer__copyright {
+    padding: 1rem 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

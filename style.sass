@@ -257,7 +257,7 @@ pre
 .footer
   padding: 1rem 0
   &__course-link
-    width: 6rem
+    width: 5rem
     height: 2rem
     background-image: url(./img/svg/rs_school_js.svg)
     background-repeat: no-repeat
@@ -277,3 +277,75 @@ pre
   &__copyright
     font-size: 1rem
     font-weight: 700
+
+@media screen and ( max-width: 1200px )
+  html
+    font-size: 16px
+@media screen and ( max-width: 992px )
+  html
+    font-size: 14px
+  .section
+    &__title
+      padding: 2rem 0
+  .description
+    &__title
+      font-size: 2.5rem
+@media screen and ( max-width: 760px )
+  .header
+    &-title
+      font-size: 1rem
+      &--fw
+        font-size: 0.8rem
+@media screen and ( max-width: 576px )
+  .row
+    flex-direction: column
+  .section
+    &-bg
+      background: $main-bg-1
+  .column
+    &__left
+      width: 100%
+      &--bg
+        background-color: $main-bg-1
+    &__right
+      width: 100%
+      &--bg
+        background-color: $main-bg-1
+  .main
+    padding-bottom: 1rem
+    &-image
+      display: flex
+      align-items: center
+      justify-content: center
+    &__description
+      padding: 0
+    &-image__wrap
+      width: 65%
+      height: 20rem
+  .description
+    &__title
+      padding: 0.5rem 0
+      text-align: center
+    &__subtitle
+      display: block
+      text-align: center
+  .section-data
+    padding-bottom: 1rem
+    &__row
+      flex-direction: column-reverse
+  .point--right
+    padding: 0
+  .hljs
+    background: $main-bg-1
+  .education__point
+    &:nth-child(4)
+      margin-bottom: 0
+  .contacts-list
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  .contacts__item
+    padding-right: 0.5rem
+  .footer
+    &__copyright
+      padding: 1rem 0
