@@ -45,6 +45,10 @@ a:active {
   color: #e1b204;
 }
 
+ul.list {
+  list-style-type: square;
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
