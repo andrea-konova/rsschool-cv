@@ -86,6 +86,10 @@ const burgerMenu = () => {
   });
 };
 burgerMenu();
+for (let index = 0; index < array.length; index++) {
+  const element = array[index];
+  
+}
 
 console.log('вёрстка валидная +10');
 console.log('вёрстка семантическая +18 (footer, header, main, nav, section, h1-h4)');
