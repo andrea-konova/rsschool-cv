@@ -158,6 +158,8 @@ a
         color: $yellow
       &:active
         color: $yellow
+.burger
+  display: none
 
 // main
 .main
@@ -297,6 +299,74 @@ pre
       &--fw
         font-size: 0.8rem
 @media screen and ( max-width: 576px )
+  .navigation
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    width: 100%
+    height: 20rem
+    position: absolute
+    top: -2rem
+    right: 0
+    background-color: rgba($main-bg-1, 0.8)
+    z-index: 3
+    &-hide
+      display: none
+  .menu
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    position: relative
+    right: -320px
+    margin: 0
+    padding: 0
+    width: 20rem
+    height: 20rem
+    list-style-type: none
+    background-color: $main-bg-2
+    &__item
+      padding: 1rem 0
+      &-link
+        font-size: 1.5rem
+  .burger
+    display: block
+    position: absolute
+    top: 1.4rem
+    right: 30px
+    width: 30px
+    height: 3px
+    background-color: $yellow
+    border: none
+    cursor: pointer
+    transition: transform 0.2s
+    z-index: 4
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      margin-top: -10px
+      top: 0
+      right: 0
+      width: 30px
+      height: 3px
+      transition: transform 0.2s
+      background-color: $yellow
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      margin-top: 10px
+      top: 0
+      right: 0
+      width: 30px
+      height: 3px
+      transition: transform 0.2s
+      background-color: $yellow
+    &--active
+      transform: rotate(90deg)
+  .image
+    z-index: 2
   .row
     flex-direction: column
   .section

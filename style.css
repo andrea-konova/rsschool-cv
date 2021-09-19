@@ -248,6 +248,10 @@ a:active {
   color: #e1b204;
 }
 
+.burger {
+  display: none;
+}
+
 .main-image__wrap {
   position: relative;
   width: 100%;
@@ -465,6 +469,109 @@ pre {
 }
 
 @media screen and (max-width: 576px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+    height: 20rem;
+    position: absolute;
+    top: -2rem;
+    right: 0;
+    background-color: rgba(41, 41, 52, 0.8);
+    z-index: 3;
+  }
+  .navigation-hide {
+    display: none;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    right: -320px;
+    margin: 0;
+    padding: 0;
+    width: 20rem;
+    height: 20rem;
+    list-style-type: none;
+    background-color: #22222d;
+  }
+  .menu__item {
+    padding: 1rem 0;
+  }
+  .menu__item-link {
+    font-size: 1.5rem;
+  }
+  .burger {
+    display: block;
+    position: absolute;
+    top: 1.4rem;
+    right: 30px;
+    width: 30px;
+    height: 3px;
+    background-color: #e1b204;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    z-index: 4;
+  }
+  .burger::before {
+    content: '';
+    display: block;
+    position: absolute;
+    margin-top: -10px;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 3px;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    background-color: #e1b204;
+  }
+  .burger::after {
+    content: '';
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 3px;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    background-color: #e1b204;
+  }
+  .burger--active {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .image {
+    z-index: 2;
+  }
   .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
