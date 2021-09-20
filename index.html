@@ -178,16 +178,16 @@
             <h3 class="section__title section__title--light">Code example</h3>
             <pre>
               <code class="javascript">
-function getMatrix(number) {
-  let matrix = [];
-  for (let i = 0; i < number; i++) {
-    matrix[i] = [];
-    for (let j = 0; j < number; j++) {
-      matrix[i][j] = (i === j ? 1 : 0);
-    }
-  }
-  return matrix;
-}
+const burgerMenu = () => {
+  const burgerBtn = document.getElementById('burger'),
+    headerMenu = document.querySelector('.header__menu');
+
+  burgerBtn.addEventListener('click', () => {
+    burgerBtn.classList.toggle("burger--active");
+    headerMenu.classList.toggle('header-hide');
+  });
+};
+burgerMenu();
               </code>
             </pre>
           </div>
